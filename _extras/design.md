@@ -40,7 +40,7 @@ permalink: /design/
 * Include useful characteristics from the PII, de-identified & anonymized, as appropriate
 * Evaluate the new dataset's risk of re-identification
 
-### Getting Started with Jupyter Notebooks (2:00) FIXME: link
+### [Getting Started]({{page.root}}/01-introduction/) (2:00)
 * Teaching: 15 min (because setup issues)
   * How to use the stickies
   * Launch the Jupyter Notebook, create new notebooks, and exit the Notebook.
@@ -51,13 +51,13 @@ permalink: /design/
   * What is displayed when several expressions are put in a single cell?
   * Change an existing cell from code to Markdown
 
-### Importing Data with the Pandas library (2:15) FIXME: link
+### [Importing Data with the Pandas Library]({{page.root}}/02-importing_data/) (2:15)
 * Teaching: 15 min
   * Explain what software libraries are and why programmers create and use them
-  * Import the Pandas library
+  * Import the pandas library
   * Use the help function to see the built-in documentation
-  * Use Pandas to load a simple CSV data set
-  * Get some basic information about a Pandas DataFrame
+  * Use pandas to load a simple CSV data set
+  * Get some basic information about a pandas DataFrame
 * Challenges: 15 min
   * If `help(pd)` produces an error, what have you forgotten to do?
   * Read the circulation data and display its summary statistics
@@ -65,9 +65,9 @@ permalink: /design/
   * What string(s) should you pass to `read_csv` to read files from other directories?
   * How can you *write* CSV data?
 
-### DataFrames (2:45) FIXME: link
+### [Working with Data as DataFrames]({{page.root}}/03-working_with_data/) (2:45)
 * Teaching: 15 min
-  * Select individual values from a Pandas dataframe.
+  * Select individual values from a pandas dataframe.
   * Select entire rows or entire columns from a dataframe.
   * Select a subset of both rows and columns from a dataframe in a single operation.
   * Select a subset of a dataframe by a single Boolean criterion.
@@ -81,7 +81,7 @@ permalink: /design/
 
 ### Break: 15 min (3:15) FIXME: link
 
-### PII and Other Risky Data (3:30) FIXME: link
+### [PII and Other Risky Data]({{ page.root }}{% link _episodes/04-pii.md %}) (3:30)
 * Teaching: 10 min
   * Define PII (Personally Identifiable Information)
   * Give examples of PII that might be found in library data
@@ -97,7 +97,7 @@ permalink: /design/
   * What data from other sources could be matched with this data to present a greater risk to patron privacy?
   * List some strategies to limit the risks within this data
 
-### Parsing Data with Functions (3:50) FIXME: link
+### [Parsing Data with Functions]({{page.root}}/05-functions/) (3:50)
 * Teaching: 10 min
   * Explain and identify the difference between function definition and function call
   * Write a function to parse a call number manually
@@ -109,7 +109,7 @@ permalink: /design/
   * Apply your function to the circulation data and save the result into a new dataframe
   * Save the result as checkouts_by_subject.csv
 
-### De-identification & Anonymization (4:10) FIXME: link
+### [De-identification & Anonymization]({{page.root}}/06-deidentification/) (4:10)
 * Teaching: 10 min
   * Distinguish between de-identification & anonymization
   * Point out that there is a spectrum of identifiable data and therefore a spectrum of techniques to protect it
@@ -119,10 +119,10 @@ permalink: /design/
   * Save this de-identified data into a new dataset
   * Save the result as deidentified_circ_data.csv
 
-### Aggregation & Re-identification (4:30) FIXME: link
+### [Aggregation & Re-identification]({{page.root}}/07-aggregation/) (4:30)
 * Teaching: 10 min
   * Observe that the purpose behind analyzing library data is not to learn about individual patrons, but to learn about our patrons as a population
-  * Demonstrate how we can use Pandas to summarize and aggregate the data we have about our patrons and their use of library resources
+  * Demonstrate how we can use pandas to summarize and aggregate the data we have about our patrons and their use of library resources
   * Emphasize the privacy benefits of saving these conclusions, rather than the raw data used for such analysis
   * Point out that such efforts do not provide adequate protection for outliers in the population
   * Note that with enough matching data from other sources, inadequately protected data can be re-identified to reveal information about individuals within the population
