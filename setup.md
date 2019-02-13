@@ -77,6 +77,7 @@ If you run into any difficulties, please request help before the workshop begins
 
 6.  Close the terminal window.
 
+<!-- FIXME: uncomment when the data is available
 ## Getting the Data
 
 The data we will be using is sample library data.
@@ -84,6 +85,7 @@ To obtain it, download and unzip the file
 [library-data.zip][data-zip].
 In order to follow the presented material, you should launch a Jupyter
 notebook in the "data" directory (see [Starting Python](#Starting-Python)).
+-->
 
 ## Starting Python
 
