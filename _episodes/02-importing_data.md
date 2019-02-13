@@ -234,11 +234,11 @@ memory usage: 323.9+ KB
 ~~~
 {: .output}
 
-Notice that our date-of-birth (DOB) column isn't being interpreted as a date. We can fix this by telling pandas how to parse that column. The parse_dates argument of pandas' read_csv() function just needs to know the indexes of the columns that should be interpreted as dates. Remember that in python, indexes start at zero and that ID is still our first column (even though the output of info no longer counts it as a _data_ column).
+Notice that our date-of-birth (DOB) column isn't being interpreted as a date. We can fix this by telling pandas how to parse that column. The parse_dates argument of pandas' read_csv() function just needs a list of columns that should be interpreted as dates. We could use the column index (the number of the column, starting at zero), but fortunately, pandas will also accept the column names (separated by commas, if we had more than one).
 
 ~~~
-# re-read our data, parsing the DOB column (which has index 7) as dates
-data = pd.read_csv("patron.csv", index_col='ID', parse_dates=[7])
+# re-read our data, parsing the DOB column as dates
+data = pd.read_csv('patron.csv', index_col='ID', parse_dates=['DOB'])
 
 # confirm that DOB is now a datetime object
 data.info()
@@ -274,6 +274,6 @@ data.tail()
 ![Output from data.tail()](../fig/02_lc-patron-privacy_2-tail.png)  
 *Screenshot of the output from data.tail() - a formatted table with five rows of data*
 
-By the way our DOB column is being formatted (year-month-date, rather than month/day/year), we can tell that it's being interpreted as date information, so we can now treat it as such.
+By the way our DOB column is being formatted (year-month-date, rather than month/day/year), we can tell that it's being interpreted as date information, so we can now treat it as such, as we will see in our next episode.
 
 {% include links.md %}
