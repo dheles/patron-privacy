@@ -87,7 +87,7 @@ In order to follow the presented material, you should launch a Jupyter
 notebook in the "data" directory (see [Starting Python](#Starting-Python)).
 -->
 
-## Starting Python
+## Testing Your Install by Starting Jupyter & Python
 
 We will teach Python using the [Jupyter notebook][jupyter], a
 programming environment that runs in a web browser. Jupyter requires a reasonably
@@ -104,6 +104,11 @@ $ jupyter notebook
 ~~~
 {: .bash}
 
+This should launch a browser window that looks something like this:
+
+![Jupyter Dashboard](../fig/00_jupyter.png)  
+*Screenshot of the Jupyter Dashboard*
+
 To start the Python interpreter without the notebook, open a terminal
 or git bash and type the command:
 
@@ -111,6 +116,11 @@ or git bash and type the command:
 $ python
 ~~~
 {: .bash}
+
+This should provide output in your terminal that looks something like this:
+
+![python terminal](../fig/00_python.png)  
+*Screenshot of the python terminal*
 
 [anaconda]: https://www.anaconda.com
 [anaconda-mac]: https://www.anaconda.com/distribution/#macos
