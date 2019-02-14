@@ -119,8 +119,20 @@ $ python
 
 This should provide output in your terminal that looks something like this:
 
-![python terminal](../fig/00_python.png)  
-*Screenshot of the python terminal*
+![Python interpreter](../fig/00_python.png)  
+*Screenshot of the Python interpreter*
+
+> ## Windows users:
+> The terminal commands above may not work for you. If not, note the Anaconda Navigator shortcut on your desktop.  
+>
+> Open the Navigator > find and launch Jupyter Notebook
+> ![Jupyter Notebook launcher](../fig/00_notebooklaunch.jpg)
+> *Screenshot of the Jupyter Notebook launcher*
+>
+> Once it launches, note that you are looking at a directory listing of your own machine. This is how you will select a Notebook file to launch in the workshop.
+>
+> Close the Navigator, setup is complete!
+{: .callout}
 
 [anaconda]: https://www.anaconda.com
 [anaconda-mac]: https://www.anaconda.com/distribution/#macos
